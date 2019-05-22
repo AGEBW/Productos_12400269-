@@ -8,8 +8,19 @@ import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.co
 import { ProductoAddComponent } from './producto-add/producto-add.component';
 import { ProductoEditarComponent } from './producto-editar/producto-editar.component';
 
-
-
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatInputModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatSortModule,
+  MatTableModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +31,19 @@ import { ProductoEditarComponent } from './producto-editar/producto-editar.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
